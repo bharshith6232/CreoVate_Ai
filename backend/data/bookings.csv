@@ -1,0 +1,2 @@
+booking_id,creator_id,creator_name,tier,amount,status,escrow_id,client_name,created_at
+BK-0091AF8D,kiara-mehta,Kiara Mehta,Standard,6000,FUNDS_HELD_IN_ESCROW,ESCROW-923890,Brand Partner,2026-10-12T16:50:42.432661

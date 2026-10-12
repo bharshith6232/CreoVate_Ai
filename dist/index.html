@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Prismatch - AI-Native Creator Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary-fixed": "#6ffbbe",
+            "on-tertiary-fixed": "#2a1700",
+            "secondary": "#006c49",
+            "surface-container-high": "#e2e7ff",
+            "inverse-primary": "#68dba9",
+            "primary-container": "#00855d",
+            "on-background": "#131b2e",
+            "on-secondary-container": "#00714d",
+            "tertiary": "#825100",
+            "inverse-on-surface": "#eef0ff",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#002114",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-container": "#eaedff",
+            "on-primary-fixed-variant": "#005137",
+            "inverse-surface": "#283044",
+            "primary": "#006948",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "outline": "#6d7a72",
+            "on-secondary-fixed-variant": "#005236",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f3ff",
+            "on-surface": "#131b2e",
+            "primary-fixed-dim": "#68dba9",
+            "surface-dim": "#d2d9f4",
+            "tertiary-container": "#a36700",
+            "on-surface-variant": "#3d4a42",
+            "surface-container-highest": "#dae2fd",
+            "surface-variant": "#dae2fd",
+            "primary-fixed": "#85f8c4",
+            "surface-bright": "#faf8ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "secondary-fixed-dim": "#4edea3",
+            "outline-variant": "#bccac0",
+            "surface-tint": "#006c4a",
+            "background": "#faf8ff",
+            "on-secondary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface": "#faf8ff",
+            "on-tertiary-container": "#fffbff",
+            "on-secondary-fixed": "#002113",
+            "on-error-container": "#93000a",
+            "secondary-container": "#6cf8bb",
+            "tertiary-fixed": "#ffddb8",
+            "on-primary-container": "#f5fff7"
+          },
+          fontFamily: {
+            "label-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-xs": ["Inter"],
+            "body-sm": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+  <script type="module" crossorigin src="/assets/index-ChkbDd6y.js"></script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-primary">
+
+  <!-- ====================================================================== -->
+  <!-- Top Navigation Header -->
+  <!-- ====================================================================== -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-lowest border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-28 flex flex-col justify-between">
+      <div class="h-16 max-w-7xl mx-auto px-6 w-full flex items-center justify-between gap-6">
+        
+        <!-- Brand Logo -->
+        <a href="#home" data-path="home" class="flex items-center gap-3 shrink-0 group cursor-pointer">
+          <img alt="Prismatch Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrD3-qfSe13tO4aAkqNobKCwQO-jSxjhrMPDUiIELV-E41V_I9DjVoUWUezOqRxHF0VdNJ3fnbp4PianRmDiL7AGoTXzZdUrbNaSJ3ecr3aHsKes7KTssB7Exis7A5QtMpeagMoIsvNrKzAgWppmP_xhRsAOOhl7lJ4qZJ_Ta5FUiGQOHrlVYxOS-at8pN5iZBk3EcXZWXJ6Ks7pqHudmLfB52k_Zm1os_gUBKjdrteWnbT7_J4yTFXQ"/>
+          <span class="font-headline-md text-headline-md tracking-tight text-on-surface font-bold">Prismatch</span>
+        </a>
+
+        <!-- Header Search Input -->
+        <div class="flex-1 max-w-xl mx-4">
+          <div class="relative flex items-center w-full">
+            <span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant pointer-events-none text-[20px]">search</span>
+            <input id="header-search-input" class="w-full pl-10 pr-24 py-2 bg-surface-container-lowest border border-outline-variant rounded-full font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-primary transition-all" placeholder="What kind of creator are you looking for?" type="text"/>
+            <button id="header-search-btn" class="absolute right-1.5 px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-full hover:bg-primary-container transition-colors" type="button">Search</button>
+          </div>
+        </div>
+
+        <!-- Right Nav Links -->
+        <div class="flex items-center gap-5 shrink-0">
+          <nav class="flex items-center gap-5">
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="create-campaign">Become a Creator</a>
+            <a class="relative flex items-center gap-1 cursor-pointer font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="explore">
+              <span>Explore</span>
+              <span class="material-symbols-outlined text-[18px]">expand_more</span>
+            </a>
+            <a class="relative font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5 cursor-pointer" data-path="messages">
+              <span>Messages</span>
+              <span class="w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+            </a>
+          </nav>
+          <div class="flex items-center pl-2 border-l border-outline-variant/40">
+            <img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20 hover:ring-primary transition-all cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFiu193iJh0BcxmZj1TKHoTlSEUhkVwE3YAHrJ1eg64pU4uHGjIXsY4_qurgnURtPrzgHe7RDWj4TmDKiggeEP1LPck09K7ZByqYHquaDbs0oCpLf5NyM3aDmPJAOTcpFyeiS6zrdQsOH8jTjxxqQGlB3X1k1ObJQjgxcNK0WZsXcHflXe-RMv77mjVICi7mBma7f-Pr1dWduj3wyEGPrfjbQbpMRk5aCKhajsP_iUCLFRCKJN9qt6qA"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories Sub-Navbar -->
+      <div class="h-12 border-t border-outline-variant/20 bg-surface-container-lowest/80 backdrop-blur-sm">
+        <div id="category-subnav" class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between gap-6 overflow-x-auto">
+          <a class="flex items-center gap-1.5 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors py-1 cursor-pointer" data-category="Video & Reels">
+            <span class="material-symbols-outlined text-[18px]">videocam</span><span>Video &amp; Reels</span>
+          </a>
+          <a class="flex items-center gap-1.5 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors py-1 cursor-pointer" data-category="Social Media">
+            <span class="material-symbols-outlined text-[18px]">share</span><span>Social Media</span>
+          </a>
+          <a class="flex items-center gap-1.5 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors py-1 cursor-pointer" data-category="Photography">
+            <span class="material-symbols-outlined text-[18px]">photo_camera</span><span>Photography</span>
+          </a>
+          <a class="flex items-center gap-1.5 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors py-1 cursor-pointer" data-category="Graphic Design">
+            <span class="material-symbols-outlined text-[18px]">palette</span><span>Graphic Design</span>
+          </a>
+          <a class="flex items-center gap-1.5 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors py-1 cursor-pointer" data-category="UGC Content">
+            <span class="material-symbols-outlined text-[18px]">smart_display</span><span>UGC Content</span>
+          </a>
+          <a class="flex items-center gap-1.5 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors py-1 cursor-pointer" data-category="AI Content">
+            <span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>AI Content</span>
+          </a>
+          <a class="flex items-center gap-1.5 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors py-1 cursor-pointer" data-category="Brand Strategy">
+            <span class="material-symbols-outlined text-[18px]">insights</span><span>Brand Strategy</span>
+          </a>
+          <div class="relative flex items-center gap-1 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors py-1 cursor-pointer" data-path="marketplace">
+            <span>All Categories</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================== -->
+  <!-- Main View Container -->
+  <!-- ====================================================================== -->
+  <main class="w-full pt-28 bg-background min-h-screen">
+
+    <!-- VIEW 1: HOME PAGE -->
+    <div id="home-view" class="max-w-7xl mx-auto px-6 py-6">
+      <div class="flex flex-col w-full pb-16">
+        
+        <!-- Hero Section -->
+        <section class="relative w-full pt-4 pb-12 overflow-hidden">
+          <div class="absolute -top-16 right-1/4 w-96 h-96 bg-secondary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+          <div class="absolute top-1/3 -left-20 w-80 h-80 bg-surface-container-high/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+          <div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+            
+            <!-- Left Hero Column -->
+            <div class="lg:col-span-7 flex flex-col items-start z-10">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-fixed/25 text-primary text-label-xs font-label-xs tracking-wider uppercase mb-6 shadow-sm">
+                <span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                <span>AI-Native Creator Marketplace</span>
+              </div>
+
+              <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-5 leading-[1.12]">
+                Find the Perfect <span class="text-primary font-bold">Creators</span> for Your Brand
+              </h1>
+
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8 leading-relaxed">
+                Discover, match and collaborate with AI-powered creators who bring your ideas to life. High-trust discovery powered by algorithmic vetting.
+              </p>
+
+              <!-- Conversational Search Bar -->
+              <div class="w-full max-w-2xl bg-surface-container-lowest rounded-full p-2 pl-5 shadow-[0_4px_24px_rgba(15,23,42,0.06)] flex items-center gap-3 transition-shadow duration-300 focus-within:shadow-[0_8px_32px_rgba(0,105,72,0.14)] mb-4">
+                <span class="material-symbols-outlined text-primary text-[22px] shrink-0">search</span>
+                <input id="hero-search-input" class="w-full bg-transparent border-0 focus:outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/65" placeholder='Describe your campaign (e.g. "Instagram reels for fitness brand")' type="text"/>
+                <button id="hero-search-btn" class="shrink-0 px-7 py-3 bg-primary text-on-primary font-label-md text-label-md rounded-full hover:bg-primary-container transition-all shadow-md hover:shadow-lg flex items-center gap-1.5 cursor-pointer">
+                  <span>Search</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </button>
+              </div>
+
+              <!-- Popular Tags -->
+              <div class="flex flex-wrap items-center gap-2 mb-10 text-on-surface-variant">
+                <span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Popular:</span>
+                <button class="popular-tag-btn px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-xs text-label-xs transition-colors cursor-pointer">Instagram Reels</button>
+                <button class="popular-tag-btn px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-xs text-label-xs transition-colors cursor-pointer">UGC Videos</button>
+                <button class="popular-tag-btn px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-xs text-label-xs transition-colors cursor-pointer">Product Photography</button>
+                <button class="popular-tag-btn px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-xs text-label-xs transition-colors cursor-pointer">AI Content</button>
+                <button class="popular-tag-btn px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-xs text-label-xs transition-colors cursor-pointer">Brand Collabs</button>
+              </div>
+
+              <!-- Social Proof Metric Bar -->
+              <div class="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 py-4 px-5 rounded-2xl bg-surface-container-lowest shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-outline-variant/20">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">group</span>
+                  </div>
+                  <div>
+                    <div class="font-headline-sm text-headline-sm text-on-surface leading-tight font-bold">500+</div>
+                    <div class="font-body-sm text-body-sm text-on-surface-variant">Verified Creators</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-on-secondary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                  </div>
+                  <div>
+                    <div class="font-headline-sm text-headline-sm text-on-surface leading-tight font-bold">100+</div>
+                    <div class="font-body-sm text-body-sm text-on-surface-variant">Brands Trust Us</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                  </div>
+                  <div>
+                    <div class="font-headline-sm text-headline-sm text-on-surface leading-tight font-bold">95%</div>
+                    <div class="font-body-sm text-body-sm text-on-surface-variant">Match Accuracy</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  </div>
+                  <div>
+                    <div class="font-headline-sm text-headline-sm text-on-surface leading-tight font-bold">4.8</div>
+                    <div class="font-body-sm text-body-sm text-on-surface-variant">Average Rating</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Hero Visual Collage -->
+            <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+              <div class="relative w-full max-w-[460px] h-[480px]">
+                
+                <!-- Card 1: Kiara Mehta -->
+                <div class="absolute top-2 left-2 w-[210px] h-[260px] rounded-2xl overflow-hidden shadow-xl bg-surface-container group cursor-pointer" onclick="window.location.hash='#profile?id=kiara-mehta'">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNWhKKLY0OILcyR3N9r1wkioUjUZ7Lf7VSp_bpzVcg9Ih7lT_bYWp6-fpmsesD7VjEtRybswkKiOj24lc5eMt1v3EQj8Q1bxiSiH2zTR1Cu4lmBGNTPcrfLFpMJpMhaPacGtK3RUExEj0JNPzRc2RszK_gOTGyqY9NFBCglHEBIXk8BC_6pOQZWlP4EkfZw8aRWrZist5hq9figVPDnnP1QERM4WLw6noX2OODu6J8y40btlsmKunwFw"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-3">
+                    <div class="flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                      <span class="text-on-primary font-label-xs text-label-xs font-semibold">Kiara • UGC Specialist</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2: Filmmaker Aarav -->
+                <div class="absolute top-0 right-0 w-[200px] h-[220px] rounded-2xl overflow-hidden shadow-lg bg-surface-container group cursor-pointer" onclick="window.location.hash='#profile?id=aarav-sharma'">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmwR2OqT1DC5InboaytA6waih489Ge_gOLmD86pu_2gWILElTOvYYD0iVnXtnyRoWK8cTzp239-sQTilBPbXObQZYT8o1Gy--98jrbXJVc3rS0ARIf3dZYOFT5rmsbGqLxEqbtAtKHgV-19atWHCesV2IPFZsTF33aShsGnvaaQN8B866ggEB-McLnQPQXoiSt_M1Mt1P1nNNWmcekRo0iDnfnYxQeXV6wwhFc1nXUdLWcukj20Y3sRw"/>
+                  <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                    <div class="w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-md group-hover:scale-110 transition-transform">
+                      <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Floating AI Matching Badge -->
+                <div class="absolute top-[170px] right-2 z-20 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-primary via-primary-container to-secondary text-on-primary font-label-xs text-label-xs font-semibold shadow-lg flex items-center gap-1.5 animate-bounce">
+                  <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                  <span>AI Matching Active</span>
+                </div>
+
+                <!-- Card 3: Video Editor -->
+                <div class="absolute top-[210px] left-[130px] w-[190px] h-[210px] rounded-2xl overflow-hidden shadow-2xl bg-surface-container z-10 group cursor-pointer" onclick="window.location.hash='#profile?id=aarav-sharma'">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJhQBt_QSntcBLxwRS-5iLItW9phmXuKVj53G2Xk-kovOTpYZuvM5xt1qKv4PZQYMRfZ6CJn-Gy1P6qhvjev8h8jagWXF3ASx8VpU6oKqH2NllJfa8BXdE1qERwzV-z-d-PBKr-vk9LAQvAYIBvaVTv6WTngCe-PU0mSUxVsE7GOvaJu0OwDIUSZ6Zv_vr6Dvdn6sIwi8OAMsd8IPAWYxRn1GqYg5rThe5IwKCNX3xohA-P26InhVoZg"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-center justify-center">
+                    <div class="w-10 h-10 rounded-full bg-surface-container-lowest/85 backdrop-blur-md flex items-center justify-center text-primary shadow-md group-hover:scale-110 transition-transform">
+                      <span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                    </div>
+                  </div>
+                  <div class="absolute bottom-2.5 left-3 right-3 text-on-primary font-label-xs text-label-xs truncate">
+                    Aarav Sharma • Filmmaker
+                  </div>
+                </div>
+
+                <!-- Card 4: Product 3D -->
+                <div class="absolute bottom-2 right-1 w-[150px] h-[160px] rounded-2xl overflow-hidden shadow-lg bg-surface-container group cursor-pointer" onclick="window.location.hash='#profile?id=rohan-verma'">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0iTIbg4w8iMHDWKR_u0DjjoLUfgKzlbP0fHOVJO-TL5QqJpDGx1mCxp7D3FUc7RwSO7VjrkB1kYm0Vo0Smer3Cvxb3pBmSh70uM_gzwHWIOsml9KWv2YqwIenaCn430xeYXx2lAa9bprVNnyRPVEL0gyqoycno0PSkorgqJLbxiEOcnaLp5Nv4PL37_M1rPVTMS9RLkNIS24sFgEwDiFxUVUnBKydN22IfE5BQBksSm6jPBVEdqxZ6g"/>
+                  <div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-xs text-label-xs font-semibold">
+                    Product 3D
+                  </div>
+                </div>
+
+                <!-- Verified Badge Stack -->
+                <div class="absolute bottom-8 left-0 z-20 bg-surface-container-lowest/95 backdrop-blur-md p-2.5 pr-4 rounded-2xl shadow-xl flex items-center gap-3 border border-outline-variant/30">
+                  <div class="flex -space-x-2">
+                    <img class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH4fFDxnqnLT7j04l0pIfmkk8SklRtwO7Q5f0qjNxvEuEzOKTi0Gga1Hd1V715yvR1cVFYtZ4axzQoTECCgk8--clYYTMofyG0RCES4jdhWkZwlLzDdDRxNFVKFQKzwJxm8Rk5KnRPzY1jz9ILpYBEF-C92YEGOT4dEoisVvRv41re63i0y1ziypJd6U4bdC05iIydRyDvJoPk2d8dFtHy-GkkbhtsQ6cdNXCOG2nxbu_k6SA59zzS4w"/>
+                    <img class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfvO4KDY3FjvjTxpS2s1PRETIIBTmm9rKPYyT9eR0BwpiLQvBsDj5CoUmyEZCvxkD9692gT32BTxH4dQwEwqnE1ClMp4usR6N4P0-uw6prEg8-5hAOQroXH_pcX6knvXisWxDEfQQe-9rMDnq3y_dKcPcbPDebS1Zheyf7msPHfKsdn30bwOUuAANSK5auKP6RQI6YWMe0H505OaxnAyDh6sEhrqCgvsLG-uRBIKy8AEzig3lpPUqmKg"/>
+                    <img class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqCg5fJw4tncdviKtGa3AWdHbEpwfcgt4vgvflMJmlBx9TCav6RuEnt4cLWnan7RUFuyIS--yN6IHsai-Y_co8dj2MqFu4myNcS-Ksdjc4RgrBYesg7HnfcpYujyvJ8jyLA-YA4o6rMEv3efsY9M3fI5LX0P3MGYQ6z0Wv0dvnWcJ5fPHFqA58pxvBvKHL9WBB_RixHmDtuBqliv6ClQ6hTBXx_tcuyXZxz8ZC8XVWX3sz3aUcdsuI9Q"/>
+                  </div>
+                  <div>
+                    <div class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+                      <span>500+</span>
+                      <span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    </div>
+                    <div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">Verified Creators</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular Categories Grid Section -->
+        <section class="w-full mt-8">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Popular Categories</h2>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Explore top-performing creators segmented by their core discipline</p>
+            </div>
+            <a class="group flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors cursor-pointer" data-path="explore">
+              <span>View all</span>
+              <span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            <!-- Card 1 -->
+            <div class="popular-cat-card group bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col border border-outline-variant/20" data-category="Video & Reels">
+              <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLQVdsB1olJa8Vl3dWMz9CK0AQCWsQ-REc2eD5VO1KBhRjJnENR4863ZL4ExZ4YNIM9Jl0-4Bo3dFGmk5Knroh6XTkoOgmt_QB_rE9G1q4nOklGSVW3rx7psIkYdZLhxeH2kyUCfwh7GWPF42TGMopXQ-QzC3fR2ll0ro20hVkaHuJowHoQRR2z353VDDwDZ55LnXz2t3_QV9MmTtT2Vrx5nxDovWHDVn9RoiM5ttJfJitiDBLY7DaGg"/>
+              </div>
+              <div class="px-1 pb-1">
+                <h3 class="font-headline-sm text-on-surface text-[15px] font-semibold group-hover:text-primary transition-colors">Video &amp; Reels</h3>
+                <p class="font-body-sm text-on-surface-variant text-[12px] truncate mt-0.5">For social media growth</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="popular-cat-card group bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col border border-outline-variant/20" data-category="UGC Content">
+              <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCydpLbWDq4fNwEIES-9GBY0ktnXW76vdTliDVVSINbfZtQ3CBIGYYVWsr09gTvY9dHn9QCUAja8HLG39UGBfhey9pkvh6m3PAFPgVcjzIqzWwwFs8Sjjb7A5hoD73D2E-iKP1DQhqfhT3YhFsSjhAaAaVcoBGUZKmAb89GodPiJSL943eBGszf-ncqVcwpaSQgGd04HBVf3qEsN7V0-lAOn4jTWQeHpUVDEwIr56dlt9P_-2_FRujJIA"/>
+              </div>
+              <div class="px-1 pb-1">
+                <h3 class="font-headline-sm text-on-surface text-[15px] font-semibold group-hover:text-primary transition-colors">UGC Content</h3>
+                <p class="font-body-sm text-on-surface-variant text-[12px] truncate mt-0.5">Authentic product content</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="popular-cat-card group bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col border border-outline-variant/20" data-category="Photography">
+              <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg69eqUY_H_QqCIp2hhrX5_GOKJEHHepWSyqpWB_5GysTr7GUmi2M2NHgm_QCC2fqYoMUFV4zjrodiSfCdUjzzeXjurmtwBPJyUmHqXA0JISxZujFXzFTpIeY52CAXFUUl-XSOFs0CIlSBLqJ0FPyUuBfllnqDRcF4kwToUshcn6chACnDY3fqtdf1G6MS_7VoZhPj0bIpPjnQ6IrKgjSjPE3z6rOK2DYTWU4G-I7yMv77kKYZyDpK2A"/>
+              </div>
+              <div class="px-1 pb-1">
+                <h3 class="font-headline-sm text-on-surface text-[15px] font-semibold group-hover:text-primary transition-colors">Photography</h3>
+                <p class="font-body-sm text-on-surface-variant text-[12px] truncate mt-0.5">Product &amp; lifestyle</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="popular-cat-card group bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col border border-outline-variant/20" data-category="Graphic Design">
+              <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUOVSQltEBWP9jmSZjByBwYam0AiK6-dQEbno-ggZ6WDoyWQuZB30qRiLYGZIwyEytozDiDze_oY47_csr1eUizmL7J8NKPwULHiYIs6EW1P2iXR8FU0QJtP4G3gfyf4enNQfd39p9sUnt68-m1zXZcBbdff68Q-pGVan1Ur4WTqh2xK_kLFDOSubCLZ4tUnWNkw-RUrYhYWo0KuGd2sQtpfhtFlV7bh8e1L9v4og1IUgjN95kBjHM7A"/>
+              </div>
+              <div class="px-1 pb-1">
+                <h3 class="font-headline-sm text-on-surface text-[15px] font-semibold group-hover:text-primary transition-colors">Graphic Design</h3>
+                <p class="font-body-sm text-on-surface-variant text-[12px] truncate mt-0.5">Logos, banners &amp; more</p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="popular-cat-card group bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col border border-outline-variant/20" data-category="AI Content">
+              <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPDnePcxWA-cnGHmnZDJblkvsAFKABQ8JV9bwYUPbeZkYZZwPiIYTdTFiUUkarwAjsTkOAJzq4BPEYzWvJVNQJ34xCo6Meo84uAO-UFCueSVyje4xrJxlQQuRmDk7ldPwSqOz_gTl7rPCI-upD3qtQ2AGtUxVEJYXjunt9QwhjMCbgAinKbtLCyFoNKzZi5ej6n0kfKW5_IYdKSVE--7Hjsg14zO7n-d7fb-zJBgtHL5uFHoLTFiZE6Q"/>
+              </div>
+              <div class="px-1 pb-1">
+                <h3 class="font-headline-sm text-on-surface text-[15px] font-semibold group-hover:text-primary transition-colors">AI Content</h3>
+                <p class="font-body-sm text-on-surface-variant text-[12px] truncate mt-0.5">AI-generated videos &amp; art</p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="popular-cat-card group bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col border border-outline-variant/20" data-category="Social Media">
+              <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgviLaNyBeBowp7APbqhr_P-R37hxFjK5VkpuW8UYyIKT44BgBFp8_yucRz19u7C-kbeN98Ibub1QlU4QnN-dOdEuqVll8Ug4mqXUOV2NyU9q8bJ1VtS7fjMJxAOSYo59uq-8vf7RLRTENwsR2tEI_vhl07-l8nSUTrk0Js2RIvO9Q0v5aM0eqC84HgO6p8ORlwfIweYIFY5TX41MAUlHCf-EW0mv5_keniAZ_-cS8cXYIpN7ALKYq8w"/>
+              </div>
+              <div class="px-1 pb-1">
+                <h3 class="font-headline-sm text-on-surface text-[15px] font-semibold group-hover:text-primary transition-colors">Social Media</h3>
+                <p class="font-body-sm text-on-surface-variant text-[12px] truncate mt-0.5">Strategy &amp; management</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- VIEW 2: MARKETPLACE / FIND CREATORS DIRECTORY -->
+    <div id="marketplace-view" class="max-w-7xl mx-auto px-6 py-6 hidden">
+      <div class="flex flex-col w-full">
+        
+        <!-- Header Title & Subtitle -->
+        <div class="mb-8">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Find Creators</h1>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-1">Browse and hire talented creators for your next campaign</p>
+            </div>
+            <div class="flex items-center gap-2 self-start md:self-auto text-on-surface-variant font-label-sm text-label-sm">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label-sm font-semibold">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                500+ Verified Active
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Algorithmic Matched Banner (Shown when brief submitted) -->
+        <div id="matched-campaign-banner" class="mb-6 p-4 rounded-xl bg-gradient-to-r from-secondary-fixed/40 via-surface-container-lowest to-surface-container-low border border-primary/30 flex items-center justify-between shadow-sm hidden">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-[28px]">auto_awesome</span>
+            <div>
+              <h4 class="font-label-md font-bold text-on-surface">CreativeTwin Algorithmic Matches</h4>
+              <p class="font-body-sm text-on-surface-variant text-[13px]">Creators ranked based on your campaign brief requirements &amp; visual style affinity.</p>
+            </div>
+          </div>
+          <button id="clear-matched-filter-btn" class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors border border-outline-variant/30">
+            View All Creators
+          </button>
+        </div>
+
+        <!-- Main Marketplace 2-Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Left Filter Sidebar (3 cols) -->
+          <aside id="marketplace-filter-aside" class="lg:col-span-3 space-y-6 bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/20">
+            
+            <!-- Category Filter -->
+            <div class="space-y-3.5">
+              <div class="flex items-center justify-between">
+                <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Category</h2>
+                <button id="reset-cat-btn" class="text-primary font-label-xs text-label-xs hover:underline cursor-pointer" type="button">Reset</button>
+              </div>
+              <div class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="category-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="Video & Reels"/>
+                    <span>Video &amp; Reels</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(124)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="category-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="UGC Content"/>
+                    <span>UGC Content</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(98)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="category-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="Photography"/>
+                    <span>Photography</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(76)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="category-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="Graphic Design"/>
+                    <span>Graphic Design</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(65)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="category-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="AI Content"/>
+                    <span>AI Content</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(54)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="category-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="Social Media"/>
+                    <span>Social Media</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(48)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="h-px bg-surface-container-high w-full"></div>
+
+            <!-- Budget Range Filter -->
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Budget Range</h2>
+                <span id="budget-display-val" class="text-primary font-label-sm text-label-sm font-semibold">₹50,000</span>
+              </div>
+              <div class="relative py-1">
+                <input id="budget-range-input" class="w-full accent-primary h-1.5 bg-surface-container rounded-lg cursor-pointer" max="50000" min="1000" step="500" type="range" value="50000"/>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="flex-1 bg-surface-container-low px-3 py-2 rounded-lg">
+                  <span class="block text-outline font-label-xs">Min</span>
+                  <span class="font-label-md text-label-md text-on-surface font-semibold">₹1,000</span>
+                </div>
+                <span class="text-outline font-body-sm">-</span>
+                <div class="flex-1 bg-surface-container-low px-3 py-2 rounded-lg text-right">
+                  <span class="block text-outline font-label-xs">Max</span>
+                  <span class="font-label-md text-label-md text-on-surface font-semibold">₹50,000</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-px bg-surface-container-high w-full"></div>
+
+            <!-- AI Models & Tools Filter -->
+            <div class="space-y-3.5">
+              <div class="flex items-center justify-between">
+                <h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-1.5 font-semibold">
+                  <span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span>
+                  <span>AI Models &amp; Tools</span>
+                </h2>
+                <span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-xs text-[10px] font-semibold">Vetted</span>
+              </div>
+              <div class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="ai-tool-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="Runway Gen-3"/>
+                    <span>Runway Gen-3</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(142)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="ai-tool-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="Midjourney v6"/>
+                    <span>Midjourney v6</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(198)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="ai-tool-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="Kling AI"/>
+                    <span>Kling AI</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(85)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="ai-tool-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="ComfyUI"/>
+                    <span>Stable Diffusion / ComfyUI</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(112)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="ai-tool-filter-checkbox w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox" value="ElevenLabs"/>
+                    <span>ElevenLabs</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(94)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="h-px bg-surface-container-high w-full"></div>
+
+            <!-- Licensing Filter -->
+            <div class="space-y-3.5">
+              <h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-1.5 font-semibold">
+                <span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+                <span>Licensing &amp; Commercial</span>
+              </h2>
+              <div class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" checked type="checkbox"/>
+                    <span>Full Commercial Rights (Clean IP)</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(310)</span>
+                </label>
+                <label class="flex items-center justify-between cursor-pointer group select-none">
+                  <span class="flex items-center gap-2.5 group-hover:text-on-surface transition-colors">
+                    <input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+                    <span>Model-Indemnified</span>
+                  </span>
+                  <span class="text-outline font-label-xs">(185)</span>
+                </label>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Right Marketplace Content (9 cols) -->
+          <div class="lg:col-span-9 space-y-6">
+            
+            <!-- Top Chips Bar & Sort Option -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-surface-container-lowest p-3 rounded-xl shadow-sm border border-outline-variant/20">
+              <div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+                <button class="px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm transition-all" type="button">All</button>
+                <button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors whitespace-nowrap" type="button">Top Rated</button>
+                <button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors whitespace-nowrap" type="button">Fast Delivery</button>
+                <button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors whitespace-nowrap" type="button">Verified</button>
+                <button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors whitespace-nowrap" type="button">Online Now</button>
+              </div>
+
+              <!-- Sort Dropdown -->
+              <div class="flex items-center gap-2 shrink-0 px-2">
+                <span class="text-outline font-body-sm text-body-sm">Sort by:</span>
+                <div class="relative inline-flex items-center cursor-pointer">
+                  <select id="sort-dropdown" class="bg-transparent font-label-sm text-label-sm text-on-surface font-semibold pr-6 focus:outline-none cursor-pointer appearance-none">
+                    <option value="relevance">Relevance</option>
+                    <option value="rating">Rating (High to Low)</option>
+                    <option value="price_asc">Price (Low to High)</option>
+                    <option value="orders">Most Orders</option>
+                  </select>
+                  <span class="material-symbols-outlined text-[18px] text-on-surface-variant pointer-events-none absolute right-0">expand_more</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic 3-Column Creator Cards Grid -->
+            <div id="marketplace-cards-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              <!-- Rendered via src/app.js -->
+            </div>
+
+            <!-- Pagination Strip -->
+            <div class="flex items-center justify-between pt-6 pb-2">
+              <p id="marketplace-results-count" class="font-body-sm text-body-sm text-on-surface-variant">Showing <span class="font-semibold text-on-surface">1 - 6</span> of 480 verified creators</p>
+              <div class="flex items-center gap-2">
+                <button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm disabled:opacity-40" disabled type="button">Previous</button>
+                <button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold" type="button">1</button>
+                <button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm flex items-center justify-center hover:bg-surface-container transition-colors" type="button">2</button>
+                <button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm flex items-center justify-center hover:bg-surface-container transition-colors" type="button">3</button>
+                <span class="text-outline px-1">...</span>
+                <button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 3: CREATOR PROFILE VIEW -->
+    <div id="profile-view" class="max-w-7xl mx-auto px-6 py-6 hidden">
+      <div class="flex flex-col w-full">
+        
+        <!-- Profile Header Hero Card -->
+        <section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-6 lg:p-8 mb-6 border border-outline-variant/20">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left Info -->
+            <div class="lg:col-span-7 flex flex-col md:flex-row items-start md:items-center gap-6">
+              <div class="relative shrink-0">
+                <img id="profile-avatar" class="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover ring-4 ring-primary/20 shadow-lg" src="" alt="Creator Avatar"/>
+                <div class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary ring-2 ring-surface-container-lowest" title="ProcessProof Verified">
+                  <span class="material-symbols-outlined text-[15px]">verified</span>
+                </div>
+              </div>
+
+              <div class="flex-1 space-y-3">
+                <div class="flex flex-wrap items-center gap-2">
+                  <h1 id="profile-name" class="font-headline-lg text-headline-lg tracking-tight text-on-surface font-bold">Kiara Mehta</h1>
+                  <span class="inline-flex items-center text-primary" title="Verified Prismatch Creator">
+                    <span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                  </span>
+                </div>
+                <p id="profile-title" class="font-headline-sm text-headline-sm text-primary font-semibold">UGC &amp; Lifestyle Creator</p>
+
+                <!-- Metrics Row -->
+                <div class="flex flex-wrap items-center gap-y-2 gap-x-4 text-on-surface-variant font-body-sm text-body-sm">
+                  <div class="flex items-center gap-1">
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span id="profile-rating" class="font-semibold text-on-surface">4.9</span>
+                    <span id="profile-reviews-count" class="text-on-surface-variant">(120 reviews)</span>
+                  </div>
+                  <span class="text-outline-variant">•</span>
+                  <div class="flex items-center gap-1 text-on-surface">
+                    <span id="profile-projects" class="font-semibold text-primary">500+</span>
+                    <span>projects completed</span>
+                  </div>
+                  <span class="text-outline-variant">•</span>
+                  <div class="flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px]">location_on</span>
+                    <span id="profile-location">Mumbai, India</span>
+                  </div>
+                  <span class="text-outline-variant">•</span>
+                  <div class="flex items-center gap-1.5 font-medium text-primary">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    <span>Online now</span>
+                  </div>
+                </div>
+
+                <!-- AI Stack Pills -->
+                <div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/30 space-y-2">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-1.5">
+                      <span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+                      <span class="font-label-sm text-label-sm font-semibold text-on-surface">AI Tool Stack &amp; Verification</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-xs text-label-xs font-semibold flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[12px]">check_circle</span>Verified Workflow: Custom LoRA &amp; Seed-Lock
+                    </span>
+                  </div>
+                  <div id="profile-tool-tags" class="flex flex-wrap items-center gap-1.5 pt-0.5"></div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex flex-wrap items-center gap-3 pt-2">
+                  <button id="profile-hire-btn" class="px-6 py-2.5 bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:bg-primary-container transition-all flex items-center gap-2 font-semibold">
+                    <span class="material-symbols-outlined text-[18px]">bolt</span>
+                    <span>Hire Me</span>
+                  </button>
+                  <button class="px-5 py-2.5 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all flex items-center gap-2 border border-outline-variant/30 font-medium">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant">chat</span>
+                    <span>Message</span>
+                  </button>
+                  <button class="p-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface-variant hover:text-error transition-all shadow-sm border border-outline-variant/30">
+                    <span class="material-symbols-outlined text-[20px]">favorite</span>
+                  </button>
+                  <button class="p-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all shadow-sm border border-outline-variant/30">
+                    <span class="material-symbols-outlined text-[20px]">share</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Video Intro Card -->
+            <div class="lg:col-span-5">
+              <div class="relative w-full aspect-[16/9] md:aspect-[16/8] lg:aspect-[16/9] rounded-xl overflow-hidden shadow-sm group cursor-pointer bg-surface-container">
+                <img id="profile-intro-thumb" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="" alt="Intro Video Preview"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent flex flex-col items-center justify-center p-4">
+                  <div class="w-14 h-14 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-primary text-[32px] ml-1" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </div>
+                  <span class="mt-2.5 text-on-primary font-label-md text-label-md tracking-wide drop-shadow-sm font-semibold">Watch Intro</span>
+                  <div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-inverse-surface/70 backdrop-blur text-on-primary font-label-xs text-label-xs">
+                    0:45
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navigation Tab Strip -->
+        <nav class="w-full bg-surface-container-lowest rounded-xl shadow-sm px-6 mb-6 flex items-center gap-8 overflow-x-auto border border-outline-variant/20">
+          <button class="py-4 font-label-md text-label-md text-primary font-semibold border-b-2 border-primary whitespace-nowrap flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">person</span><span>About</span>
+          </button>
+          <button class="py-4 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">inventory_2</span><span>Services</span>
+            <span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-xs text-label-xs">3</span>
+          </button>
+          <button class="py-4 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">grid_view</span><span>Portfolio</span>
+            <span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-xs text-label-xs">6</span>
+          </button>
+          <button class="py-4 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">reviews</span><span>Reviews</span>
+            <span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-xs text-label-xs">120</span>
+          </button>
+          <button class="py-4 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+            <span>ProcessProof™</span>
+            <span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-xs text-label-xs font-semibold">AI Vetted</span>
+          </button>
+        </nav>
+
+        <!-- Two Column Profile Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          
+          <!-- Left Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <!-- About Me -->
+            <section class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/20 space-y-5">
+              <h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">About Me</h2>
+              <p id="profile-bio" class="font-body-md text-body-md text-on-surface-variant leading-relaxed"></p>
+              
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm shadow-sm">
+                  <span class="material-symbols-outlined text-[16px] text-primary">smart_display</span>Instagram Reels
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm shadow-sm">
+                  <span class="material-symbols-outlined text-[16px] text-primary">videocam</span>UGC Videos
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm shadow-sm">
+                  <span class="material-symbols-outlined text-[16px] text-primary">inventory</span>Product Demo
+                </span>
+              </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/20 space-y-4">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">Skills</h3>
+              <div id="profile-skills" class="flex flex-wrap gap-2"></div>
+            </section>
+
+            <!-- AI Compatibility Insights -->
+            <section class="bg-gradient-to-br from-surface-container-lowest via-surface-container-lowest to-surface-container rounded-xl p-6 shadow-sm border border-outline-variant/20 space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[22px]">auto_awesome</span>
+                  <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">AI Compatibility</span>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-xs text-label-xs font-bold">98% Match</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Creator excels in D2C beauty and wellness brands with high retention metrics across 9:16 vertical video formats.
+              </p>
+              <div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden">
+                <div class="bg-primary h-2 rounded-full w-[94%]"></div>
+              </div>
+              <div class="flex justify-between items-center text-on-surface-variant font-label-xs text-label-xs pt-1">
+                <span>Audience Authenticity: 99.2%</span>
+                <span>Script-to-Delivery: 48h</span>
+              </div>
+            </section>
+
+            <!-- AI Production Specs -->
+            <section class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30 space-y-4">
+              <div class="flex items-center justify-between border-b border-outline-variant/20 pb-3">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[22px]">hardware</span>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">AI Production Specs</h3>
+                </div>
+                <span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-xs text-label-xs font-semibold">Audited Stack</span>
+              </div>
+              <div class="space-y-3 font-body-sm text-body-sm">
+                <div class="p-3 rounded-lg bg-surface-container-low space-y-1">
+                  <span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold block">Base Models Mastered</span>
+                  <p id="spec-base-models" class="font-label-sm text-label-sm text-on-surface font-medium"></p>
+                </div>
+                <div class="p-3 rounded-lg bg-surface-container-low space-y-1">
+                  <span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold block">AI Rig &amp; Local Hardware</span>
+                  <p id="spec-hardware-rig" class="font-label-sm text-label-sm text-on-surface font-medium"></p>
+                </div>
+                <div class="p-3 rounded-lg bg-surface-container-low space-y-1">
+                  <span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold block">Commercial Rights Guarantee</span>
+                  <p id="spec-guarantee" class="font-label-sm text-label-sm text-on-surface font-medium"></p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Right Column: Featured Work Interactive Video Gallery -->
+          <div class="lg:col-span-7 space-y-4">
+            <div class="flex items-center justify-between px-1">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Featured Work</h2>
+                  <span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-xs text-label-xs font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">verified</span>100% Commercial Cleared &amp; Model Certified
+                  </span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Selected top performing client deliverables with prompt breakdowns &amp; seed verification</p>
+              </div>
+            </div>
+
+            <!-- Dynamic Portfolio Items Grid -->
+            <div id="profile-portfolio-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <!-- Rendered via src/app.js -->
+            </div>
+
+            <!-- Verified Escrow Safety Banner -->
+            <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/30 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-[20px]">security</span>
+                </div>
+                <div>
+                  <h4 class="font-label-md text-label-md font-semibold text-on-surface">Prismatch Escrow Protected</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Payment is held securely until you approve delivered media assets.</p>
+                </div>
+              </div>
+              <button class="px-4 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm font-semibold transition-colors">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 4: CREATE CAMPAIGN / SMART BRIEF BUILDER -->
+    <div id="campaign-view" class="max-w-7xl mx-auto px-6 py-6 hidden">
+      <div class="flex flex-col w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Left Navigation / Stepper Sidebar -->
+          <aside class="lg:col-span-4 bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/20 space-y-6">
+            <div class="space-y-1">
+              <h2 class="font-headline-md text-headline-md text-on-surface font-bold">Create Campaign</h2>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Setup your brief in 4 quick steps for high-precision algorithmic creator matching.</p>
+            </div>
+            
+            <nav class="relative space-y-5">
+              <div class="absolute left-4 top-5 bottom-5 w-0.5 bg-surface-container-high -z-0"></div>
+              
+              <div class="relative z-10 flex items-start gap-4 group cursor-pointer">
+                <div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center shrink-0 shadow-sm font-bold">1</div>
+                <div class="pt-0.5 space-y-0.5">
+                  <p class="font-label-md text-label-md text-primary font-semibold">Campaign Details</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Tell us about your campaign</p>
+                </div>
+              </div>
+
+              <div class="relative z-10 flex items-start gap-4 group cursor-pointer opacity-75 hover:opacity-100 transition-opacity">
+                <div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center shrink-0 font-bold">2</div>
+                <div class="pt-0.5 space-y-0.5">
+                  <p class="font-label-md text-label-md text-on-surface font-medium">Content Requirements</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Format, platform &amp; style</p>
+                </div>
+              </div>
+
+              <div class="relative z-10 flex items-start gap-4 group cursor-pointer opacity-75 hover:opacity-100 transition-opacity">
+                <div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center shrink-0 font-bold">3</div>
+                <div class="pt-0.5 space-y-0.5">
+                  <p class="font-label-md text-label-md text-on-surface font-medium">Budget &amp; Timeline</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Set your budget and deadline</p>
+                </div>
+              </div>
+
+              <div class="relative z-10 flex items-start gap-4 group cursor-pointer opacity-75 hover:opacity-100 transition-opacity">
+                <div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center shrink-0 font-bold">4</div>
+                <div class="pt-0.5 space-y-0.5">
+                  <p class="font-label-md text-label-md text-on-surface font-medium">Review &amp; Submit</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Get matched with creators</p>
+                </div>
+              </div>
+            </nav>
+
+            <div class="pt-4 mt-6 bg-surface-container-low rounded-lg p-4 space-y-2 border border-outline-variant/30">
+              <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined text-[20px]">verified_user</span>
+                <span class="font-label-sm text-label-sm font-semibold">AI Match Guarantee</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Prismatch analyzes over 50+ data signals in Python to match creators with proven audience alignment in under 2 minutes.</p>
+            </div>
+          </aside>
+
+          <!-- Right Wizard Main Form -->
+          <main class="lg:col-span-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/20 space-y-8">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Smart Brief Builder</h1>
+                <span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-xs font-label-xs flex items-center gap-1 font-semibold">
+                  <span class="material-symbols-outlined text-[14px]">auto_awesome</span>AI Powered
+                </span>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant">Describe your campaign and let AI find the best creators for you.</p>
+            </div>
+
+            <form id="smartBriefForm" class="space-y-6">
+              
+              <!-- Campaign Title -->
+              <div class="space-y-2">
+                <label class="block font-label-md text-label-md text-on-surface font-semibold" for="campaignTitle">Campaign Title</label>
+                <input id="campaignTitle" class="w-full px-4 py-3 bg-surface-container-lowest rounded-lg border border-outline-variant/40 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/60 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all" placeholder="e.g. Instagram Reels for New Skincare Product" type="text" value="Instagram Reels for Organic Vitamin C Foaming Cleanser"/>
+              </div>
+
+              <!-- Campaign Description -->
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <label class="block font-label-md text-label-md text-on-surface font-semibold" for="campaignDescription">Campaign Description</label>
+                  <button id="enhanceAiBtn" class="flex items-center gap-1.5 text-primary hover:text-primary-container font-label-xs text-label-xs transition-colors cursor-pointer font-bold" type="button">
+                    <span class="material-symbols-outlined text-[16px]">smart_toy</span>
+                    <span>Refine with Brief AI</span>
+                  </button>
+                </div>
+                <textarea id="campaignDescription" class="w-full px-4 py-3 bg-surface-container-lowest rounded-lg border border-outline-variant/40 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/60 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all resize-y" rows="5">We are an organic D2C skincare brand launching a soothing vitamin C foaming facial cleanser. We need 3-5 authentic lifestyle UGC creators to record unboxing, texture demo, and a 3-day glow result reel with cheerful natural home aesthetic.</textarea>
+
+                <!-- Realtime Extracted Signals Panel -->
+                <div class="mt-3 p-4 bg-surface-container-low/60 border border-outline-variant/30 rounded-xl space-y-3">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1.5">
+                      <span class="material-symbols-outlined text-primary text-[18px]">magic_button</span>
+                      <span>Realtime Python Deconstruction (Style, Tone, Seeds, Pipeline)</span>
+                    </span>
+                    <span class="text-[11px] font-label-xs text-primary font-semibold px-2 py-0.5 rounded-full bg-secondary-fixed/50 flex items-center gap-1 shrink-0">
+                      <span class="material-symbols-outlined text-[14px]">bolt</span>Live Extractor Active
+                    </span>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-outline-variant/20">
+                    <span class="text-label-xs font-label-xs text-on-surface-variant font-medium">Extracted Signals:</span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-outline-variant/30 font-label-xs text-label-xs text-on-surface flex items-center gap-1">
+                      <span class="text-primary font-semibold">Style:</span> <span id="signal-style">Authentic Organic UGC Lifestyle</span>
+                    </span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-outline-variant/30 font-label-xs text-label-xs text-on-surface flex items-center gap-1">
+                      <span class="text-primary font-semibold">Aspect:</span> <span id="signal-aspect">9:16 Vertical</span>
+                    </span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-outline-variant/30 font-label-xs text-label-xs text-on-surface flex items-center gap-1">
+                      <span class="text-primary font-semibold">Audio:</span> <span id="signal-audio">ElevenLabs Voiceover</span>
+                    </span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-outline-variant/30 font-label-xs text-label-xs text-on-surface flex items-center gap-1">
+                      <span class="text-primary font-semibold">Pipeline:</span> <span id="signal-pipeline">Runway Gen-3 + Midjourney v6</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Platforms Selection -->
+              <div class="space-y-2.5">
+                <label class="block font-label-md text-label-md text-on-surface font-semibold">Platform(s)</label>
+                <div class="flex flex-wrap gap-2.5">
+                  <button class="platform-chip flex items-center gap-2 px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-primary text-on-primary shadow-sm" type="button">
+                    <span class="material-symbols-outlined text-[18px]">photo_camera</span><span>Instagram</span>
+                  </button>
+                  <button class="platform-chip flex items-center gap-2 px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-primary text-on-primary shadow-sm" type="button">
+                    <span class="material-symbols-outlined text-[18px]">play_circle</span><span>TikTok</span>
+                  </button>
+                  <button class="platform-chip flex items-center gap-2 px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface shadow-sm" type="button">
+                    <span class="material-symbols-outlined text-[18px]">smart_display</span><span>YouTube</span>
+                  </button>
+                  <button class="platform-chip flex items-center gap-2 px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface shadow-sm" type="button">
+                    <span class="material-symbols-outlined text-[18px]">work</span><span>LinkedIn</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Content Type -->
+              <div class="space-y-2.5">
+                <label class="block font-label-md text-label-md text-on-surface font-semibold">Content Type</label>
+                <div class="flex flex-wrap gap-2.5">
+                  <button class="content-type-chip px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-primary text-on-primary shadow-sm" type="button">Reels / Short Video</button>
+                  <button class="content-type-chip px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface shadow-sm" type="button">UGC</button>
+                  <button class="content-type-chip px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface shadow-sm" type="button">Product Photography</button>
+                  <button class="content-type-chip px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface shadow-sm" type="button">Graphic Design</button>
+                  <button class="content-type-chip px-4 py-2 rounded-full font-label-sm text-label-sm font-semibold transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface shadow-sm" type="button">AI Content</button>
+                </div>
+              </div>
+
+              <!-- Inline Details Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                <div class="space-y-2">
+                  <label class="block font-label-md text-label-md text-on-surface font-semibold">Budget Range</label>
+                  <select class="w-full px-4 py-3 bg-surface-container-lowest rounded-lg border border-outline-variant/40 font-body-md text-body-md text-on-surface cursor-pointer">
+                    <option value="1">₹1,000 - ₹5,000</option>
+                    <option selected value="2">₹5,000 - ₹15,000</option>
+                    <option value="3">₹15,000 - ₹50,000</option>
+                    <option value="4">₹50,000+</option>
+                  </select>
+                </div>
+                <div class="space-y-2">
+                  <label class="block font-label-md text-label-md text-on-surface font-semibold">Number of Creators</label>
+                  <input class="w-full px-4 py-3 bg-surface-container-lowest rounded-lg border border-outline-variant/40 font-body-md text-body-md text-on-surface" placeholder="e.g. 3-5" type="text" value="3"/>
+                </div>
+                <div class="space-y-2">
+                  <label class="block font-label-md text-label-md text-on-surface font-semibold">Campaign Timeline</label>
+                  <select class="w-full px-4 py-3 bg-surface-container-lowest rounded-lg border border-outline-variant/40 font-body-md text-body-md text-on-surface cursor-pointer">
+                    <option value="urgent">Urgent (&lt; 3 days)</option>
+                    <option selected value="standard">Standard (1-2 weeks)</option>
+                    <option value="flexible">Flexible (1 month+)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Form Actions -->
+              <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-outline-variant/30">
+                <button class="px-5 py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" type="button">
+                  Save as Draft
+                </button>
+                <button id="submitBriefBtn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-md hover:shadow-lg transition-all cursor-pointer font-semibold" type="submit">
+                  <span>Find Matching Creators</span>
+                  <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                </button>
+              </div>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ====================================================================== -->
+  <!-- Modals -->
+  <!-- ====================================================================== -->
+
+  <!-- Modal 1: Prompt Recipe Inspector -->
+  <div id="recipe-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-surface-container-lowest rounded-2xl shadow-2xl max-w-xl w-full p-6 space-y-4 border border-outline-variant/30 animate-in fade-in zoom-in duration-200">
+      <div class="flex items-center justify-between border-b border-outline-variant/20 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[24px]">receipt_long</span>
+          <h3 id="recipe-title" class="font-headline-sm text-headline-sm text-on-surface font-bold">Prompt Recipe</h3>
+        </div>
+        <button class="modal-close-btn p-1.5 rounded-full hover:bg-surface-container-low text-on-surface-variant transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 text-body-sm">
+        <div class="p-2.5 rounded-lg bg-surface-container-low">
+          <span class="text-outline font-label-xs uppercase tracking-wider block">Model</span>
+          <span id="recipe-model" class="font-label-sm font-semibold text-on-surface"></span>
+        </div>
+        <div class="p-2.5 rounded-lg bg-surface-container-low">
+          <span class="text-outline font-label-xs uppercase tracking-wider block">Seed</span>
+          <span id="recipe-seed" class="font-label-sm font-mono text-primary font-semibold"></span>
+        </div>
+      </div>
+
+      <div class="space-y-1.5">
+        <label class="font-label-xs text-outline uppercase tracking-wider font-semibold block">Positive Generation Prompt</label>
+        <div id="recipe-positive-prompt" class="p-3.5 bg-surface-container-low rounded-xl font-mono text-[12px] text-on-surface leading-relaxed select-all"></div>
+      </div>
+
+      <div class="space-y-1.5">
+        <label class="font-label-xs text-outline uppercase tracking-wider font-semibold block">Negative Prompt</label>
+        <div id="recipe-negative-prompt" class="p-2.5 bg-surface-container-low rounded-xl font-mono text-[11px] text-on-surface-variant leading-relaxed"></div>
+      </div>
+
+      <div class="flex items-center justify-between pt-2">
+        <span id="recipe-steps" class="font-label-xs text-on-surface-variant"></span>
+        <button id="recipe-copy-btn" class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm hover:bg-primary-container transition-all">
+          <span class="material-symbols-outlined text-[16px]">content_copy</span>
+          <span>Copy Prompt Recipe</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Escrow Booking Checkout -->
+  <div id="booking-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-surface-container-lowest rounded-2xl shadow-2xl max-w-lg w-full p-6 space-y-5 border border-outline-variant/30">
+      <div class="flex items-center justify-between border-b border-outline-variant/20 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Prismatch Escrow Booking</h3>
+        </div>
+        <button class="modal-close-btn p-1.5 rounded-full hover:bg-surface-container-low text-on-surface-variant transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="space-y-3">
+        <label class="block font-label-sm text-label-sm font-semibold text-on-surface">Select Package Tier</label>
+        
+        <label class="flex items-center justify-between p-3.5 rounded-xl border border-primary/40 bg-primary/5 cursor-pointer">
+          <div class="flex items-center gap-3">
+            <input type="radio" name="booking-tier" value="Standard" checked class="accent-primary"/>
+            <div>
+              <span class="font-label-md font-bold text-on-surface block">Standard Package</span>
+              <span class="font-body-sm text-[12px] text-on-surface-variant">3x Multi-Hook Reels + Audio Voiceover</span>
+            </div>
+          </div>
+          <span class="font-headline-sm font-bold text-primary">₹6,000</span>
+        </label>
+
+        <label class="flex items-center justify-between p-3.5 rounded-xl border border-outline-variant/30 hover:border-primary/40 cursor-pointer">
+          <div class="flex items-center gap-3">
+            <input type="radio" name="booking-tier" value="Basic" class="accent-primary"/>
+            <div>
+              <span class="font-label-md font-bold text-on-surface block">Basic Package</span>
+              <span class="font-body-sm text-[12px] text-on-surface-variant">1x 9:16 Vertical Video Master</span>
+            </div>
+          </div>
+          <span class="font-headline-sm font-bold text-on-surface">₹2,500</span>
+        </label>
+
+        <label class="flex items-center justify-between p-3.5 rounded-xl border border-outline-variant/30 hover:border-primary/40 cursor-pointer">
+          <div class="flex items-center gap-3">
+            <input type="radio" name="booking-tier" value="Premium" class="accent-primary"/>
+            <div>
+              <span class="font-label-md font-bold text-on-surface block">Premium Campaign</span>
+              <span class="font-body-sm text-[12px] text-on-surface-variant">5x Deliverables + Custom LoRA Model</span>
+            </div>
+          </div>
+          <span class="font-headline-sm font-bold text-on-surface">₹12,000</span>
+        </label>
+      </div>
+
+      <!-- Trust Assurance Box -->
+      <div class="p-3.5 rounded-xl bg-secondary-fixed/20 border border-secondary-fixed/40 space-y-1">
+        <div class="flex items-center gap-1.5 text-primary font-label-sm font-bold">
+          <span class="material-symbols-outlined text-[18px]">lock</span>
+          <span>100% Milestone Escrow Guarantee</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">
+          Funds remain locked in Prismatch escrow until you inspect and approve the generative assets. 100% clean IP transfer.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-end gap-3 pt-2">
+        <button class="modal-close-btn px-4 py-2 rounded-lg text-on-surface-variant font-label-sm text-label-sm">Cancel</button>
+        <button id="confirm-booking-btn" class="px-6 py-2.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-md hover:bg-primary-container transition-all">
+          Fund Escrow &amp; Start
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Escrow Certificate Confirmation -->
+  <div id="certificate-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-surface-container-lowest rounded-2xl shadow-2xl max-w-md w-full p-6 space-y-4 border border-outline-variant/30 text-center">
+      <div class="w-16 h-16 rounded-full bg-secondary-fixed/50 text-primary flex items-center justify-center mx-auto mb-2">
+        <span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+      </div>
+      <h3 class="font-headline-md text-headline-md font-bold text-on-surface">Escrow Funded &amp; Locked</h3>
+      <p class="font-body-sm text-on-surface-variant text-[13px]">
+        Your campaign contract has been logged in the Prismatch Ledger. The creator has been notified to commence the initial prompt pass.
+      </p>
+
+      <div class="p-4 rounded-xl bg-surface-container-low text-left space-y-2 text-body-sm">
+        <div class="flex justify-between"><span class="text-outline">Booking ID:</span><span id="cert-booking-id" class="font-mono font-bold text-on-surface"></span></div>
+        <div class="flex justify-between"><span class="text-outline">Escrow ID:</span><span id="cert-escrow-id" class="font-mono text-primary font-bold"></span></div>
+        <div class="flex justify-between"><span class="text-outline">Amount Held:</span><span id="cert-amount" class="font-bold text-on-surface"></span></div>
+        <div class="flex justify-between"><span class="text-outline">Status:</span><span class="text-primary font-semibold">HELD IN TRUST</span></div>
+      </div>
+
+      <button class="modal-close-btn w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-sm font-bold shadow-md">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <!-- ====================================================================== -->
+  <!-- Footer -->
+  <!-- ====================================================================== -->
+  <footer class="w-full bg-surface-container-low border-t border-outline-variant/30 py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <img alt="Prismatch Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrD3-qfSe13tO4aAkqNobKCwQO-jSxjhrMPDUiIELV-E41V_I9DjVoUWUezOqRxHF0VdNJ3fnbp4PianRmDiL7AGoTXzZdUrbNaSJ3ecr3aHsKes7KTssB7Exis7A5QtMpeagMoIsvNrKzAgWppmP_xhRsAOOhl7lJ4qZJ_Ta5FUiGQOHrlVYxOS-at8pN5iZBk3EcXZWXJ6Ks7pqHudmLfB52k_Zm1os_gUBKjdrteWnbT7_J4yTFXQ"/>
+            <span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">Prismatch</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">The high-trust, AI-native creator discovery and vetting engine connecting elite creators with premium brands.</p>
+        </div>
+
+        <div>
+          <h4 class="font-label-md text-label-md text-on-surface mb-3 font-semibold">Discover</h4>
+          <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+            <li><a class="hover:text-primary transition-colors cursor-pointer" data-path="explore">Top Rated Creators</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer" data-path="explore">Verified Portfolios</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer" data-path="create-campaign">AI Creator Matching</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer" data-path="explore">Trending Campaigns</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-label-md text-label-md text-on-surface mb-3 font-semibold">Creators</h4>
+          <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+            <li><a class="hover:text-primary transition-colors cursor-pointer" data-path="create-campaign">Creator Portal</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer">Monetization Standards</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer">Security &amp; Escrow</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer">Community Guidelines</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-label-md text-label-md text-on-surface mb-3 font-semibold">Company</h4>
+          <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+            <li><a class="hover:text-primary transition-colors cursor-pointer">About Prismatch</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer">Terms of Service</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer">Privacy Policy</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer">Trust &amp; Safety</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-outline-variant/30 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+        <p>© 2025 Prismatch Inc. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a class="hover:text-primary transition-colors cursor-pointer">Privacy</a>
+          <a class="hover:text-primary transition-colors cursor-pointer">Terms</a>
+          <a class="hover:text-primary transition-colors cursor-pointer">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application script entry -->
+</body>
+</html>

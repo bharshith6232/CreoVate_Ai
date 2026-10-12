@@ -1,0 +1,510 @@
+[
+  {
+    "id": "kiara-mehta",
+    "name": "Kiara Mehta",
+    "handle": "@kiara_creates",
+    "title": "UGC & Lifestyle Hybrid",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuA33OyDWv1BUBysLPMV46oGLzEtgBrYD8XdDDN4Eh7N-4k30U44uRt6fjynEdac5wxMjz_pzyzej4NatT-SnJP9v4C-42y2THF4ccYv3rWD89I5Qrppd7qGVMc03jMkKftpyhe7nqO_4qAT_mg9JDtvOSzMg5PRTOlAYlvvVqqe9XSGMsKeRR2XyxxOWU3TJ5iVIKLD1Y1XpOhnwdBDGAurKFz_vxnkoo_DaH3cr5RdwAZx9N_JjtQZBA",
+    "hero_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDnFfmHtd-du-025hHQAdnsaL22fLDKTkuLEjiDJwjJ_-nUjLMACFCoRS7t3eETkZHM2cTfWZfhICBmQLNzsOdmV0DxSHur8FHoDcQRHCYo0PnhFMtl-IV3V_8YkV4VJmELM4zre-E72e2EdlUzEwLxJRSvdQQZloBYKWISwhopgQcJS8BneyPY4OGIXlMqa9fJLWp49-Jj5CSJ8EjIRDPml4kV4b2yfWDLnS7u4XUR_fRgbvBC5_lTOQ",
+    "intro_video_thumb": "https://lh3.googleusercontent.com/aida-public/AB6AXuCW7H65C0Rqc0fvuuT2tFlAVOxw33oIvGALS-cExVTsmObhfEA9QOPr6uPjxpt5KMZwA2nQKS48w6BdgeiDb-o4ibEi7Yh6ssUu0pS3QZYdshWCnSYD-0jbegNx_rtTmv2Dj2wwPj1zYMq-B77PQ_mboY8MeVPhgiT_tk7ZlwYyTtCwBVMnTuQxVUooZNxp1cLzwRN7QO731sVvrJOnuzHrmp5VEiVyEYJMwXjpZ_nBNzlfbE-T6NlXSA",
+    "badge": "Level 2",
+    "rating": 4.9,
+    "reviews_count": 120,
+    "completed_projects": 500,
+    "location": "Mumbai, India",
+    "member_since": "Jan 2023",
+    "avg_response_time": "2 hours",
+    "online": true,
+    "price_from": 2500,
+    "delivery_days": 2,
+    "category": "UGC Content",
+    "platforms": ["Instagram", "TikTok", "YouTube"],
+    "ai_models": ["Runway Gen-3", "Midjourney v6", "ElevenLabs", "Kling AI", "ComfyUI", "Luma Dream Machine"],
+    "specializations": ["Consistent Characters / Seed Locking", "Cinematic Video", "Product Rendering"],
+    "licensing": ["Full Commercial Rights (Clean IP)", "Model-Indemnified", "Workflow Files Included (.json/prompts)"],
+    "bio": "Hi! I'm Kiara, a UGC and lifestyle content creator helping brands create authentic, engaging, and scroll-stopping content. I specialize in product demos, testimonials, and lifestyle reels that drive real results. Combining practical acting with custom LoRA fine-tuning for 100% facial and tone consistency.",
+    "skills": ["UGC", "Video Editing", "Content Creation", "Instagram Reels", "TikTok Content", "Product Photography", "LoRA Training"],
+    "formats": ["9:16 Vertical", "4K 60fps", "Multi-Ratio Pack"],
+    "commercial_ip": "100% Commercial Cleared & Model Certified",
+    "hardware_specs": {
+      "base_models": "Midjourney v6, Runway Gen-3 Alpha, Kling AI, SDXL, ElevenLabs v2",
+      "rig": "ComfyUI Custom Nodes, ControlNet (Depth/OpenPose), AnimateDiff, RTX 4090 Dedicated Rig",
+      "guarantee": "100% Commercial Cleared • Full IP transfer with indemnified enterprise models • Raw seed & JSON workflow graph files included",
+      "revisions": "Includes 3 prompt iteration & targeted inpainting passes per asset"
+    },
+    "match_insights": {
+      "compatibility": 98,
+      "audience_authenticity": "99.2%",
+      "script_to_delivery": "48h",
+      "summary": "Kiara excels in D2C beauty and wellness brands with high retention metrics across 9:16 vertical video formats."
+    },
+    "portfolio": [
+      {
+        "id": "kiara-p1",
+        "title": "Glow Cosmetics",
+        "subtitle": "Lip Tint Unboxing & Demo",
+        "brand": "Glow Cosmetics",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCY4Bs1J8XXRmmxvhlz18LD05QkJy25fc_02x_l83mya1SvhB3a4AW8NNiZX_jD5QAt_cIpZTdSoFF3Nw-OPfh8W0rfabAsJkcqXiQCehCxKqR4tKroBIaUCNMYiF3M7FAwB428JjyeOKaQMWZtPbZZUHGatDTyVKOiIwD2OCmd2pu30XdEvJiQ2hWaA-_gl6Od__MMqRxCqkGeqRTfWpBguTVFnltwVocRH4xW4EkN4djbMXEWRwHjhA",
+        "pipeline": "Runway Gen-3 + MJ v6",
+        "aspect_ratio": "9:16 Vertical",
+        "views": "124K",
+        "commercial_cleared": true,
+        "prompt_recipe": {
+          "positive_prompt": "Cinematic lifestyle UGC clip, young Indian woman smiling warmly holding vibrant red lip tint stick, bright daylight studio, soft depth of field, natural skin texture, 4k ultra realistic --ar 9:16 --v 6.0",
+          "negative_prompt": "cartoon, oversaturated, plastic skin, distorted fingers, watermark, blurry",
+          "model": "Runway Gen-3 Alpha / Midjourney v6",
+          "seed": 482910482,
+          "sampler": "Euler_a",
+          "steps": 32,
+          "cfg_scale": 7.0,
+          "controlnet": "OpenPose + Depth Map v1.2"
+        }
+      },
+      {
+        "id": "kiara-p2",
+        "title": "Aura Botanicals",
+        "subtitle": "Serum Review Demo",
+        "brand": "Aura Botanicals",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeUOyFSEbN_3lYtFamPcgAZ6nPLY2vbps4CeUz0EQKPAmQVTIb4NZXYDhjc9awYMkmCKRq6i5InADqN5_jbMdKRn09YFThqFm2QzbBS54J1Q6-__qaNnhY_JBd8Fs8ydpCd5voDAbg2m0kWoC4kT5B5ZzB30Ep-zRKRuptOYgnABJ4hEFBm8vrtZaqaWqcahrl1Uwd1SqNLKg5AGp-MWDKSUfSZ-LDWhd896WAuk48QyUVysjv2YCpbw",
+        "pipeline": "ComfyUI + SDXL",
+        "aspect_ratio": "4:5 Product",
+        "views": "88K",
+        "commercial_cleared": true,
+        "prompt_recipe": {
+          "positive_prompt": "Minimalist luxury amber glass dropper serum bottle resting on wet white Carrara marble counter, morning sun beam casting caustic reflections, high end spa ambiance, octane render quality",
+          "negative_prompt": "noise, dirty background, misaligned text, floating bottle",
+          "model": "SDXL Base + Realism LoRA 0.8",
+          "seed": 918237461,
+          "sampler": "DPM++ 2M Karras",
+          "steps": 40,
+          "cfg_scale": 6.5,
+          "controlnet": "Canny Edge 0.9"
+        }
+      },
+      {
+        "id": "kiara-p3",
+        "title": "Velvet Muse",
+        "subtitle": "Holiday Lookbook",
+        "brand": "Velvet Muse",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBzICaagSbusGtf40YtsYi4-ZXPhjg63zuhvXo3t8IySIAwi3fG6-qKINp6fgDuJvV9RQ7tVpbbxaRB_YDcamQ7nsNtniC0l_5Y4lMsjLVAIvICwiEl4l8K0hIcxPxoRcI_5CUx0mS71R0TsRm9zUehBhWDoByl6u8rTHRTT74KZQJrm9aKAuS_AqVDCjtMmMDmvrzzJZgwvgzeJdCi80SGAsORzrPinMmpTZBubF_WcIG1r4D8OAvggw",
+        "pipeline": "Kling AI + Midjourney",
+        "aspect_ratio": "9:16 UHD",
+        "views": "210K",
+        "commercial_cleared": true,
+        "prompt_recipe": {
+          "positive_prompt": "Close up beauty portrait of woman applying eyeshadow palette with fluffy brush, cinematic soft amber and rose rim light, studio lighting, hyper-detailed eyelashes and skin, high fashion editorial",
+          "negative_prompt": "harsh contrast, deformed brushes, extra fingers, cartoonish",
+          "model": "Kling 1.5 Professional Mode",
+          "seed": 204918274,
+          "sampler": "DDIM",
+          "steps": 35,
+          "cfg_scale": 7.5,
+          "controlnet": "Face ID v2.0"
+        }
+      },
+      {
+        "id": "kiara-p4",
+        "title": "Nourish Kitchen",
+        "subtitle": "Morning Wellness Reel",
+        "brand": "Nourish Kitchen",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA8MoFbP64sYMjpnodk19rLX6RFPyHHTfyY5EW0JmAeGlSjZyLHq3qas9eq1i-Rr39rhK0-2f9jWkamK5LnImT6KL3hDJHdEPItKOPuL_he2AENNeEwYfD4-ctjqmGj7Ex5X-jZuIn_xF3EBlRuDfhH90JYOgZoOfSXX6X6pjHkJmPdNSNRPpwEQazQMCQ0i9A3vv7QjoiYEf0gGE5ghTOY0fACn9ZI49fmGaxTrv_4BZWCD3q3cYpTcA",
+        "pipeline": "Luma Dream + ElevenLabs",
+        "aspect_ratio": "9:16 Vertical",
+        "views": "64K",
+        "commercial_cleared": true,
+        "prompt_recipe": {
+          "positive_prompt": "Overhead dynamic camera pan of colorful dragonfruit acai bowl with sliced kiwi and chia seeds on sunlit wooden terrace table, organic steam, vivid summer colors",
+          "negative_prompt": "unrealistic fruit, low quality, dark shadows",
+          "model": "Luma Dream Machine v1.0",
+          "seed": 771239841,
+          "sampler": "Euler",
+          "steps": 28,
+          "cfg_scale": 6.0,
+          "controlnet": "None"
+        }
+      },
+      {
+        "id": "kiara-p5",
+        "title": "Stride Athletics",
+        "subtitle": "Unboxing & On-Foot",
+        "brand": "Stride Athletics",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJEk00CGShn2JDmJ_A-lMoGf0TptqAsShiyWNedcx_yC_iiMlZtaenSD3_kue1fdWmCpZ5NDClogXTVPRodSO62GlWmZQiXvrmH73HbaZpyOnzOofF2dI8yR2yrCdKeuhOQANhlBXaS00WYrTCk8rkkHYQsADTOM-3OAgNkDN6ANLvA6EWh5Uc0zfCpOgujC3ABI3-Q7rnBBrjURT2fWLw8iVUFkybriGbOqnu4WdnkoYNQrm4YLQgJQ",
+        "pipeline": "ComfyUI ControlNet",
+        "aspect_ratio": "16:9 4K",
+        "views": "175K",
+        "commercial_cleared": true,
+        "prompt_recipe": {
+          "positive_prompt": "Futuristic neon-soled athletic running shoe hovering mid-stride against raw industrial concrete background, atmospheric mist, volumetric cyan edge lights, 8k product render",
+          "negative_prompt": "distorted logo, blurred laces, wrong proportions",
+          "model": "ComfyUI Workflow SDXL + IP-Adapter",
+          "seed": 339481920,
+          "sampler": "UniPC",
+          "steps": 45,
+          "cfg_scale": 8.0,
+          "controlnet": "LineArt 1.0 + Depth 0.8"
+        }
+      },
+      {
+        "id": "kiara-p6",
+        "title": "Urban Weave",
+        "subtitle": "Capsule Wardrobe Fit",
+        "brand": "Urban Weave",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDVHiOWxqSB1Svv5Wf27OYoKdOTg3MHws7vFo9PgYS0by0Iw9uIWPjXuVa9yeI6eV2E4H-QPzbrmaNpMX9a1CaQ90GETE07SAiO95P9SVq042fJK2ERslKqtSPq6Y0qNWfByU8fwlvabTPgUZQ5-smh3QRnt-iq5p1K7KQjeRg2-Qsir6iuYc8mdjo0t8N7Y3DwYwq_xnXlFFkhH6sts9AoCuk5MayunhuG3L3Z_ibJJgdC2QG-PuA9_A",
+        "pipeline": "Runway Gen-3 + LoRA",
+        "aspect_ratio": "9:16 Vertical",
+        "views": "95K",
+        "commercial_cleared": true,
+        "prompt_recipe": {
+          "positive_prompt": "Editorial street style autumn walk in downtown Mumbai, fashion influencer wearing beige cashmere trench coat, golden hour sunset reflections in storefront glass, slow motion 60fps",
+          "negative_prompt": "blurry face, warped anatomy, stiff walk",
+          "model": "Runway Gen-3 Camera Control",
+          "seed": 881920381,
+          "sampler": "Euler_a",
+          "steps": 30,
+          "cfg_scale": 7.0,
+          "controlnet": "OpenPose DensePose"
+        }
+      }
+    ],
+    "services": [
+      {
+        "tier": "Basic",
+        "title": "1x 9:16 UGC Reel with AI Sound Design",
+        "price": 2500,
+        "delivery_days": 2,
+        "revisions": 2,
+        "features": ["1 Hook + Problem + Solution Video", "Script & Teleprompter Delivery", "4K Vertical 9:16 Master", "Commercial Social License"]
+      },
+      {
+        "tier": "Standard",
+        "title": "3x UGC Reels Pack + A/B Hooks",
+        "price": 6000,
+        "delivery_days": 3,
+        "revisions": 3,
+        "features": ["3 Multi-Hook Variations (6 video cuts)", "ElevenLabs Voiceover Integration", "Raw Seed & Workflow JSON Deliverables", "Full Commercial IP Buyout"]
+      },
+      {
+        "tier": "Premium",
+        "title": "Full Brand Launch Campaign (5x Videos + LoRA Character)",
+        "price": 12000,
+        "delivery_days": 5,
+        "revisions": 5,
+        "features": ["5 Complete Commercial Deliverables", "Custom LoRA Model Trained on Brand Mascot", "Indemnified Enterprise License", "Escrow Milestone Guarantee"]
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Ananya Roy",
+        "role": "Growth Lead @ DermaBloom",
+        "rating": 5,
+        "date": "2 weeks ago",
+        "comment": "Kiara delivered 3 reels that outperformed our previous studio creatives by 4.2x ROAS! The seed-locking consistency was flawless."
+      },
+      {
+        "author": "Vikram Sethi",
+        "role": "Founder @ UrbanActive",
+        "rating": 5,
+        "date": "1 month ago",
+        "comment": "Super professional, delivered within 36 hours. The ComfyUI workflows were clean and our dev team validated the clean IP right away."
+      }
+    ]
+  },
+  {
+    "id": "aarav-sharma",
+    "name": "Aarav Sharma",
+    "handle": "@aarav_cinema",
+    "title": "Cinematic AI & Director",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuC8a11_qprnRG0viAOVjc4qoyTurjdxQkTzwaJMg4Mhqe3e_QtWU7uji9KK9yEGhYYsjh7XGytzdZRi-UgxygTiE34Aqu5ecpDUP0wTfaxisma8VFLR-HTTazX0k1ePkjRsXS_c6jDY7M4ITY0A6KbIGNAwTPFIcBXDYrxLJbJs8E369T9FJxfGSo4WtGnxjfmRJ2jKGOsew-cn-GFVO1e-vGAzD-Gin2uW4zD465TtTRCWCgfml_dckg",
+    "hero_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAU0JpAleVjLYjsIvWyQS5TSQNiIzwoIXfxTQWwpoBmYzyaWi45yS9vPmfdZ2EQn9LUolhq0dvS8u3vKFu2VHwEIw47uvuwPUXse_yZe_fqCCxHI8V2bKgdAnbZb2FhnjqZub_OBYqs2OB4dN0V33QEoYbaA1HvdupvlSbTHrqYw2zs_6fANZXscKS4d0G1dZT7GqcauBKkBX_fz8zSdtVrwPzv9a-5EEkDElPSwq2NYYPOCqhLxOWjnA",
+    "intro_video_thumb": "https://lh3.googleusercontent.com/aida-public/AB6AXuAmwR2OqT1DC5InboaytA6waih489Ge_gOLmD86pu_2gWILElTOvYYD0iVnXtnyRoWK8cTzp239-sQTilBPbXObQZYT8o1Gy--98jrbXJVc3rS0ARIf3dZYOFT5rmsbGqLxEqbtAtKHgV-19atWHCesV2IPFZsTF33aShsGnvaaQN8B866ggEB-McLnQPQXoiSt_M1Mt1P1nNNWmcekRo0iDnfnYxQeXV6wwhFc1nXUdLWcukj20Y3sRw",
+    "badge": "Top Rated",
+    "rating": 4.8,
+    "reviews_count": 99,
+    "completed_projects": 320,
+    "location": "New Delhi, India",
+    "member_since": "Nov 2022",
+    "avg_response_time": "1 hour",
+    "online": true,
+    "price_from": 3000,
+    "delivery_days": 3,
+    "category": "Video & Reels",
+    "platforms": ["YouTube", "Instagram", "LinkedIn"],
+    "ai_models": ["Runway Gen-3", "Kling AI", "Suno / Udio", "Sora Ready", "Midjourney v6"],
+    "specializations": ["Cinematic Video", "Visual FX & Inpainting", "AI Voiceover & Dubbing"],
+    "licensing": ["Full Commercial Rights (Clean IP)", "Model-Indemnified"],
+    "bio": "Award-winning commercial filmmaker combining cinema camera language with high-fidelity generative video pipelines. Specializing in brand films, tech trailers, and cinematic advertisements that captivate.",
+    "skills": ["Cinematic Video", "Color Grading", "Runway Gen-3", "Kling AI", "Film Directing", "Sound Design"],
+    "formats": ["16:9 4K & ProRes", "9:16 Vertical", "DCI 2.39:1"],
+    "commercial_ip": "Clean IP Indemnified",
+    "hardware_specs": {
+      "base_models": "Runway Gen-3 Alpha, Kling 1.5, Sora Ready, Midjourney v6",
+      "rig": "DaVinci Resolve Studio + Dual RTX 4090 Workstation",
+      "guarantee": "Broadcast-ready ProRes 422 HQ with 100% certified training indemnification",
+      "revisions": "4 scene iterations and unlimited sound mix passes"
+    },
+    "match_insights": {
+      "compatibility": 95,
+      "audience_authenticity": "98.5%",
+      "script_to_delivery": "72h",
+      "summary": "Aarav is the premier choice for narrative tech campaigns, automotive launches, and cinematic product intros."
+    },
+    "portfolio": [
+      {
+        "id": "aarav-p1",
+        "title": "Aether Automotive",
+        "subtitle": "EV Supercar Brand Film",
+        "brand": "Aether Auto",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAmwR2OqT1DC5InboaytA6waih489Ge_gOLmD86pu_2gWILElTOvYYD0iVnXtnyRoWK8cTzp239-sQTilBPbXObQZYT8o1Gy--98jrbXJVc3rS0ARIf3dZYOFT5rmsbGqLxEqbtAtKHgV-19atWHCesV2IPFZsTF33aShsGnvaaQN8B866ggEB-McLnQPQXoiSt_M1Mt1P1nNNWmcekRo0iDnfnYxQeXV6wwhFc1nXUdLWcukj20Y3sRw",
+        "pipeline": "Runway Gen-3 + Kling",
+        "aspect_ratio": "16:9 Cinema 4K",
+        "views": "310K",
+        "commercial_cleared": true,
+        "prompt_recipe": {
+          "positive_prompt": "Anamorphic widescreen tracking shot of aerodynamic electric concept sports car driving through rainy neon Tokyo highway at night, cinematic puddles reflection, anamorphic blue lens flare, arri alexa 65mm",
+          "negative_prompt": "deformed wheels, cartoon, low fps, stutter",
+          "model": "Runway Gen-3 Alpha",
+          "seed": 99281726,
+          "sampler": "DPM++ SDE",
+          "steps": 40,
+          "cfg_scale": 7.5,
+          "controlnet": "Motion Tracking Camera Rig"
+        }
+      }
+    ],
+    "services": [
+      {
+        "tier": "Basic",
+        "title": "30s Cinematic Brand Teaser",
+        "price": 3000,
+        "delivery_days": 3,
+        "revisions": 2,
+        "features": ["16:9 4K ProRes Export", "Original AI Sound Score (Suno)", "Color Graded Master", "Commercial Broadcast Clearance"]
+      },
+      {
+        "tier": "Standard",
+        "title": "60s Narrative Commercial + 2 Vertical Cuts",
+        "price": 7500,
+        "delivery_days": 4,
+        "revisions": 3,
+        "features": ["Full 60s Film + 9:16 Social Cutdowns", "Multi-Character Scene Continuity", "Dolby 5.1 & Stereo Audio Mix", "Raw Scene Renders Delivered"]
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Karan Singhania",
+        "role": "CMO @ VoltMotors",
+        "rating": 5,
+        "date": "3 weeks ago",
+        "comment": "The production quality looked like a $50k agency shoot. Aarav's cinematic pacing and lighting are second to none."
+      }
+    ]
+  },
+  {
+    "id": "sneha-iyer",
+    "name": "Sneha Iyer",
+    "handle": "@sneha_ai_studio",
+    "title": "AI Social & Character Consistency",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuAhFaKISZD09siZmWf2KA3FueEyjo9M-cFoBu92oP7evZ71RmJoEcc2PaWqxw0zPI1nWewGhVV48KsXqJjaErXF7MEHbQNIYyk7TigmcBHJFiTJfd32Sc9VmffB02w7QXWnZp9FmTg6rWLfjrpEYl_cQVz6xdBp0AR257nLu75hDnSiEurLR_1zSWCnEia39MR5M-F_qppA7EK1IN6sRKizMAcSmc1Xi0QHvmuul24TeR0b7XmY_zpPcg",
+    "hero_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMl5h3qpYvI13O16TfUcG4NaaBX1Bq7s9smsQyWtv0tkV95BqSU_RZ7GSHqyXZb6lxYNfWXV-I-3bi2Y8s_tbkLGW46eD_8WFOr4uVzqEvk_tqwohj-FbTeImjuHfnAmc4x2Qh_UrQrSd11NHJNcZdV5Vd2tZHZ3rkfUNgm0NF2DFKAZxQfuxi5p0sQwm4SnDe8UboaA-sGJ5O_8SevVJ-gEbKPcQ4wOoJP9YX9zEPFFqSg-2JS-wXlA",
+    "intro_video_thumb": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMl5h3qpYvI13O16TfUcG4NaaBX1Bq7s9smsQyWtv0tkV95BqSU_RZ7GSHqyXZb6lxYNfWXV-I-3bi2Y8s_tbkLGW46eD_8WFOr4uVzqEvk_tqwohj-FbTeImjuHfnAmc4x2Qh_UrQrSd11NHJNcZdV5Vd2tZHZ3rkfUNgm0NF2DFKAZxQfuxi5p0sQwm4SnDe8UboaA-sGJ5O_8SevVJ-gEbKPcQ4wOoJP9YX9zEPFFqSg-2JS-wXlA",
+    "badge": "Level 1",
+    "rating": 4.8,
+    "reviews_count": 76,
+    "completed_projects": 210,
+    "location": "Bengaluru, India",
+    "member_since": "Mar 2023",
+    "avg_response_time": "30 mins",
+    "online": true,
+    "price_from": 2000,
+    "delivery_days": 2,
+    "category": "Social Media",
+    "platforms": ["Instagram", "LinkedIn", "Twitter/X"],
+    "ai_models": ["Midjourney v6", "Luma Dream Machine", "ElevenLabs", "Stable Diffusion / ComfyUI"],
+    "specializations": ["Consistent Characters / Seed Locking", "Product Rendering"],
+    "licensing": ["Full Commercial Rights (Clean IP)", "Workflow Files Included (.json/prompts)"],
+    "bio": "Expert in creating digital brand ambassadors and consistent influencer avatars. Never suffer from character drift across marketing campaigns again.",
+    "skills": ["Consistent Characters", "Seed Locking", "Midjourney v6", "Photoshop Generative Fill", "Social Strategy"],
+    "formats": ["Multi-Ratio Pack", "PNG with Alpha", "Figma Design Kits"],
+    "commercial_ip": "100% Commercial IP",
+    "hardware_specs": {
+      "base_models": "Midjourney v6, SDXL InstantID, Flux.1 Schnell, Luma",
+      "rig": "Cloud Cluster + Local Dual RTX 3090 Rig",
+      "guarantee": "Character seed repeatability benchmarked at 99.4% facial match",
+      "revisions": "3 character turnaround pose sheets included"
+    },
+    "match_insights": {
+      "compatibility": 94,
+      "audience_authenticity": "97.8%",
+      "script_to_delivery": "48h",
+      "summary": "Best suited for brands building long-term recurring digital influencer campaigns and brand mascots."
+    },
+    "portfolio": [],
+    "services": [
+      {
+        "tier": "Basic",
+        "title": "5 Consistent Avatar Marketing Assets",
+        "price": 2000,
+        "delivery_days": 2,
+        "revisions": 2,
+        "features": ["1 Consistent AI Persona across 5 Scenes", "Seed Logs + Master Prompts", "Transparent PNG Cutouts", "Social Ad Commercial Rights"]
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "id": "rohan-verma",
+    "name": "Rohan Verma",
+    "handle": "@rohan_3d_studio",
+    "title": "AI Product & 3D Staging",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuCNGAx3mFwZQmxnuUs7Kdq6I_l-uCPgAmSOboPS7lyfV-4Y3g73-nHP449-K8E4BlJpgPCrs2ZsnwxXhSJb0Dkg_uqZfU2uYxIVMHfpo5Z3Ekbo_40zn7qjbP7zwcZyynkJOuRcajZwjckcOmswe2gF45MgxxgeyEKjjraQegOqZlls1urPyDvrd2OI12puaUjYOsIgfiidNbLGv14R-nVn9qPsN7BE2Y2GMH8KIxy7EvisqGJ4eSXaYg",
+    "hero_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBM0QFp6T2P7KQ_3kArOCf381VGBDdmaLancbJRrFpYvTeEvl7zMRw-yYfyo24GXcqJia9xxcwt9SnQCJYAYsxweeeDLMFFPBZiugiIMeNX76MUpMziYuTdUDdlwm8fYYw5Sdk_99rpWMFXUpkTO3e-VysBbeNgutcbssPhMUFXZ7aOirpl4Zcd8SsIGheiY-1OEAz4bNE1c_kJZxQd5GIAHeZYRgqvpLNCvAIs08J60ayL8ly5z52j0g",
+    "intro_video_thumb": "https://lh3.googleusercontent.com/aida-public/AB6AXuC0iTIbg4w8iMHDWKR_u0DjjoLUfgKzlbP0fHOVJO-TL5QqJpDGx1mCxp7D3FUc7RwSO7VjrkB1kYm0Vo0Smer3Cvxb3pBmSh70uM_gzwHWIOsml9KWv2YqwIenaCn430xeYXx2lAa9bprVNnyRPVEL0gyqoycno0PSkorgqJLbxiEOcnaLp5Nv4PL37_M1rPVTMS9RLkNIS24sFgEwDiFxUVUnBKydN22IfE5BQBksSm6jPBVEdqxZ6g",
+    "badge": "Top Rated",
+    "rating": 4.9,
+    "reviews_count": 142,
+    "completed_projects": 450,
+    "location": "Mumbai, India",
+    "member_since": "Aug 2022",
+    "avg_response_time": "1 hour",
+    "online": true,
+    "price_from": 3500,
+    "delivery_days": 3,
+    "category": "Photography",
+    "platforms": ["Instagram", "LinkedIn", "Other"],
+    "ai_models": ["Stable Diffusion / ComfyUI", "Midjourney v6", "Runway Gen-3"],
+    "specializations": ["Product Rendering", "Visual FX & Inpainting"],
+    "licensing": ["Full Commercial Rights (Clean IP)", "Workflow Files Included (.json/prompts)"],
+    "bio": "Industrial product photographer turned generative 3D artist. I turn plain CAD/mobile product snaps into ultra-luxury Amazon/Shopify hero renders with zero physical photoshoot costs.",
+    "skills": ["ComfyUI", "ControlNet", "SDXL Inpaint", "Lighting Staging", "Product Retouching"],
+    "formats": ["8K TIFF & PSD Stacks", "Transparent Backgrounds", "4K Video Spinners"],
+    "commercial_ip": "Clean IP Licensed",
+    "hardware_specs": {
+      "base_models": "ComfyUI, SDXL, ControlNet Depth & Normal Maps, IC-Light",
+      "rig": "Liquid Cooled RTX 4090 with 64GB DDR5 RAM",
+      "guarantee": "Perfect label preservation with pixel-level inpainting guarantees",
+      "revisions": "Unlimited lighting adjustments via IC-Light workflows"
+    },
+    "match_insights": {
+      "compatibility": 97,
+      "audience_authenticity": "99.0%",
+      "script_to_delivery": "48h",
+      "summary": "Specialist in D2C e-commerce, luxury watches, cosmetics, and footwear staging."
+    },
+    "portfolio": [],
+    "services": [
+      {
+        "tier": "Basic",
+        "title": "3x Studio Commercial Product Staged Renders",
+        "price": 3500,
+        "delivery_days": 3,
+        "revisions": 3,
+        "features": ["8K Resolution TIFF & PSD", "3 Luxury Real-World Environments", "Label & Logo Pixel-Preserved", "Full Commercial E-Commerce Rights"]
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "id": "tanya-rao",
+    "name": "Tanya Rao",
+    "handle": "@tanya_vfx",
+    "title": "Lead AI Technologist & VFX",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKoP3tCSCnEspNY1QKm7G8WGfuWUpMBepZdWukQm4L6GSCxDAL-XPgK51bVmSAXrpErMu8x3GL-1AYPCh-ONBSNOljyQksH1kaHVqITNYySjpDKASct-1Cp-ORaiDcy50ChA_LcOt6JZLV03yLXs_nSWXa8M8ROiNa5IZQmfpE9GJbnHuEeefjw1pAVNyVbB4eBjd8Dx-UXqfS4VbPwRpy5OLUXYJ6Aat00VUVTEvuOdvKU-w8T9SVug",
+    "hero_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCz7E-XEjDLkCKvYA7YwAvgOt5NwMxzJvkn7S4OqaJDgvvbSsNxtnE3nIYiy-UX5SBTwQ6DvZ2MQBECKhSmJtAtDU7X1DShCDrjpr0k64jkMRnmP1LsowWobZ29xTVzzP7juutcoqyvX3j4hs2NpduQPX6WJveI7Wu0axQb3q18npL328rub6sxyecWtfq4FZ8qUUX1UO9yn7Zvdjhc6gnfnLa_uzKf0AbuLPQ6UzaulngRT1jNotm6DA",
+    "intro_video_thumb": "https://lh3.googleusercontent.com/aida-public/AB6AXuCz7E-XEjDLkCKvYA7YwAvgOt5NwMxzJvkn7S4OqaJDgvvbSsNxtnE3nIYiy-UX5SBTwQ6DvZ2MQBECKhSmJtAtDU7X1DShCDrjpr0k64jkMRnmP1LsowWobZ29xTVzzP7juutcoqyvX3j4hs2NpduQPX6WJveI7Wu0axQb3q18npL328rub6sxyecWtfq4FZ8qUUX1UO9yn7Zvdjhc6gnfnLa_uzKf0AbuLPQ6UzaulngRT1jNotm6DA",
+    "badge": "Level 1",
+    "rating": 4.7,
+    "reviews_count": 64,
+    "completed_projects": 180,
+    "location": "Hyderabad, India",
+    "member_since": "May 2023",
+    "avg_response_time": "2 hours",
+    "online": true,
+    "price_from": 2500,
+    "delivery_days": 3,
+    "category": "AI Content",
+    "platforms": ["YouTube", "Instagram", "TikTok"],
+    "ai_models": ["Stable Diffusion / ComfyUI", "Runway Gen-3", "Sora Ready", "Kling AI"],
+    "specializations": ["Visual FX & Inpainting", "Cinematic Video"],
+    "licensing": ["Model-Indemnified", "Workflow Files Included (.json/prompts)"],
+    "bio": "Pioneering generative VFX supervisor. I build complex ComfyUI graphs for seamless CGI integrations, seamless face replacement, and futuristic world-building.",
+    "skills": ["ComfyUI Pipelines", "VFX Inpainting", "Stable Diffusion", "Runway Gen-3", "Deep Learning Video"],
+    "formats": ["Workflows (.json) Included", "ProRes 4444 with Alpha", "4K Masters"],
+    "commercial_ip": "Model-Indemnified",
+    "hardware_specs": {
+      "base_models": "ComfyUI, Stable Diffusion XL, AnimateDiff, ControlNet, Runway",
+      "rig": "Enterprise A100 GPU Pod + Dedicated RTX 4090",
+      "guarantee": "Enterprise indemnity against copyright infringements with certified datasets",
+      "revisions": "4 composite iterations"
+    },
+    "match_insights": {
+      "compatibility": 93,
+      "audience_authenticity": "96.5%",
+      "script_to_delivery": "72h",
+      "summary": "Ideal for sci-fi brands, fintech visualizers, and heavy visual transformation briefs."
+    },
+    "portfolio": [],
+    "services": [
+      {
+        "tier": "Basic",
+        "title": "Custom AI Video Scene + Full Workflow Graph",
+        "price": 2500,
+        "delivery_days": 3,
+        "revisions": 2,
+        "features": ["1x 4K CGI Scene", "ComfyUI JSON Pipeline Export", "Seed & Checkpoint Guide", "Commercial Rights"]
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "id": "aditya-kulkarni",
+    "name": "Aditya Kulkarni",
+    "handle": "@aditya_design",
+    "title": "Brand Systems & Generative Art",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuATU0yCqtB0Vmw735PAJcUJomlKx6Z9oeoNBXwuHHD7nP_bzxW56UQmlbT3vFsQ0t59FzZsvbapiEAprzuuhbWyGOlkImgR0Q3qwDhbIEvg95rrPjY099dhOWSVwW8iD0CW5YPL8p5Gu5NrEJl_OBTLQUt1s9oMjXMYduRUfI5RH1sGM_uXUgcIm1OY_3pVu8BDQWJpcDA0CicQ-ZK2WUsfXfdHFooqKiAXnTLB2T_qNt317Ol3AbU6mw",
+    "hero_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCsUszBJUCnXUdT1_o1jEJ52859Ny-3Bfi4i0veOb8C_kHonHTCPBBA3YYsn8NQhotLML-9y3zyQs37r1QigRvMbubLflP-BvixocJPllivxGJqZ7k8Bs8vU7YeM-8fo8FzPjza7nd79P79RtYTzfK_uYQ2YKkTlbd6DAeWiO8KX4slYkk-rFBxY5-8ZeS-ElqjXlKqydCA57rBrcbv2cJ9fZebK6ZN8LtNnMB0-ODFHCyuzptjaOnpCA",
+    "intro_video_thumb": "https://lh3.googleusercontent.com/aida-public/AB6AXuDUOVSQltEBWP9jmSZjByBwYam0AiK6-dQEbno-ggZ6WDoyWQuZB30qRiLYGZIwyEytozDiDze_oY47_csr1eUizmL7J8NKPwULHiYIs6EW1P2iXR8FU0QJtP4G3gfyf4enNQfd39p9sUnt68-m1zXZcBbdff68Q-pGVan1Ur4WTqh2xK_kLFDOSubCLZ4tUnWNkw-RUrYhYWo0KuGd2sQtpfhtFlV7bh8e1L9v4og1IUgjN95kBjHM7A",
+    "badge": "Level 2",
+    "rating": 4.8,
+    "reviews_count": 89,
+    "completed_projects": 290,
+    "location": "Pune, India",
+    "member_since": "Jan 2023",
+    "avg_response_time": "1 hour",
+    "online": true,
+    "price_from": 1500,
+    "delivery_days": 2,
+    "category": "Graphic Design",
+    "platforms": ["Instagram", "LinkedIn", "Twitter/X"],
+    "ai_models": ["Midjourney v6", "Stable Diffusion / ComfyUI"],
+    "specializations": ["Product Rendering", "Consistent Characters / Seed Locking"],
+    "licensing": ["Full Commercial Rights (Clean IP)"],
+    "bio": "Art director creating cohesive brand guidelines, vector icon sets, and high-resolution generative graphics that scale across digital, print, and billboard media.",
+    "skills": ["Vector Systems", "Midjourney v6", "Magnific AI", "Typography", "Brand Identity"],
+    "formats": ["Vector SVG & 8K Upscaled", "Brand Guidelines PDF", "Figma Components"],
+    "commercial_ip": "100% Commercial IP",
+    "hardware_specs": {
+      "base_models": "Midjourney v6, Magnific AI, VectorCraft, SDXL",
+      "rig": "M3 Max MacBook Pro + RTX 4080 Rig",
+      "guarantee": "Lossless vector conversion with verified print resolution",
+      "revisions": "Unlimited color palette tweaks"
+    },
+    "match_insights": {
+      "compatibility": 92,
+      "audience_authenticity": "98.0%",
+      "script_to_delivery": "24h",
+      "summary": "Fastest turnaround for brand identity, visual collateral, and social media templates."
+    },
+    "portfolio": [],
+    "services": [
+      {
+        "tier": "Basic",
+        "title": "Complete AI Brand Visual Kit",
+        "price": 1500,
+        "delivery_days": 2,
+        "revisions": 3,
+        "features": ["10 Vector AI Assets in SVG", "8K Upscaled Hero Banners", "Commercial IP Clearance", "Brand Color Guideline"]
+      }
+    ],
+    "reviews": []
+  }
+]

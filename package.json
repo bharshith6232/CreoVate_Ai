@@ -1,0 +1,20 @@
+{
+  "name": "prismatch-marketplace",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173 --host",
+    "server": ".venv\\Scripts\\python server.py",
+    "streamlit": ".venv\\Scripts\\streamlit run streamlit_app.py",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}
